@@ -1,0 +1,90 @@
+/* Garbi landing — minimal styling, no build step, no tracking. */
+
+:root {
+  --fg: #1a1a1a;
+  --muted: #6b6b6b;
+  --bg: #fdfdfb;
+  --accent: #0a66c2;
+  --rule: #e6e6e1;
+  --max-w: 720px;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--bg);
+  color: var(--fg);
+  font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue",
+    Arial, sans-serif;
+}
+
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+header, main, footer {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding: 1.5rem 1.25rem;
+}
+
+header {
+  padding-top: 3rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--rule);
+}
+
+h1 {
+  font-size: 2.4rem;
+  margin: 0 0 0.25rem 0;
+  letter-spacing: -0.01em;
+}
+
+.tagline {
+  margin: 0;
+  color: var(--muted);
+  font-size: 1.1rem;
+}
+
+main section {
+  padding: 1.5rem 0;
+  border-bottom: 1px solid var(--rule);
+}
+
+main section:last-of-type {
+  border-bottom: none;
+}
+
+main h2 {
+  font-size: 1.2rem;
+  margin: 0 0 0.5rem 0;
+  letter-spacing: 0.01em;
+}
+
+main p, main ul {
+  margin: 0.5rem 0;
+}
+
+ul {
+  padding-left: 1.25rem;
+}
+
+li { margin: 0.25rem 0; }
+
+footer {
+  color: var(--muted);
+  font-size: 0.85rem;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --fg: #e9e9e6;
+    --muted: #9a9a96;
+    --bg: #14140f;
+    --accent: #66a3ff;
+    --rule: #2c2c26;
+  }
+}

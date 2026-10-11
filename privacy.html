@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy — Garbi</title>
+  <meta name="description" content="Privacy policy for Garbi, a personal AI assistant built by Miquel Poch." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Privacy Policy</h1>
+    <p class="tagline">Garbi · Last updated 11 October 2026</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>Summary</h2>
+      <p>
+        Garbi is a personal AI assistant I (<a href="mailto:miquel.poch@gmail.com">Miquel Poch</a>) built
+        and run on my own computer. It only ever touches my own data, only ever acts on my own
+        accounts, and only ever runs on my own hardware. It is not a service available to anyone
+        else. This page describes what data it accesses, why, and how that data is handled.
+      </p>
+    </section>
+
+    <section>
+      <h2>Who is the data controller?</h2>
+      <p>
+        Miquel Poch, based in Alicante, Spain. Contact:
+        <a href="mailto:miquel.poch@gmail.com">miquel.poch@gmail.com</a>.
+      </p>
+    </section>
+
+    <section>
+      <h2>What data Garbi accesses</h2>
+      <p>Garbi connects to a small set of Google services using OAuth, with the following scopes:</p>
+      <ul>
+        <li><strong>Gmail (read &amp; send)</strong> — to monitor specific email threads I have set up
+          (e.g. a vacation-expense thread, a service-alert thread) and to send status reports when
+          I explicitly ask it to.</li>
+        <li><strong>Google Calendar</strong> — to read my events so it can flag conflicts, and to
+          add or update events only when I explicitly ask it to.</li>
+        <li><strong>Google Drive</strong> — read/write access to specific files I create (such as
+          design documents or report exports). Garbi cannot see, list, or touch the rest of my
+          Drive.</li>
+        <li><strong>Google Docs</strong> — read/write access to documents I explicitly tell it to
+          create or update.</li>
+      </ul>
+      <p>All four integrations are tied to a single Google account: miquel.poch@gmail.com.</p>
+    </section>
+
+    <section>
+      <h2>Why Garbi accesses it</h2>
+      <p>
+        Each integration exists to replace a small piece of manual work I would otherwise do
+        myself: tracking expenses from receipt photos, summarizing emails, drafting recurring
+        reports, syncing a personal calendar. None of this data is sold, shared, profiled, or
+        used for advertising.
+      </p>
+    </section>
+
+    <section>
+      <h2>Where the data lives</h2>
+      <p>
+        Garbi runs on a single personal computer in my home. Tokens and cached email/calendar
+        metadata are stored locally in encrypted files on that computer. They are not uploaded
+        to any cloud service I operate. The underlying language-model API calls (used to
+        summarize or draft content) are sent to a third-party LLM provider; only the specific
+        content of the task I am working on is transmitted, not my entire mailbox or calendar.
+      </p>
+    </section>
+
+    <section>
+      <h2>Who else sees the data</h2>
+      <ul>
+        <li><strong>Google</strong> — as the provider of Gmail, Calendar, Drive, and Docs. Their
+          own privacy policy applies to data stored with them.</li>
+        <li><strong>Language-model provider</strong> — the prompt and relevant context Garbi
+          sends when I invoke a model for summarization, drafting, or classification. I do not
+          send advertising IDs, contact lists, or full mailboxes.</li>
+      </ul>
+      <p>Beyond those two, nobody. I do not share Garbi output with third parties.</p>
+    </section>
+
+    <section>
+      <h2>How long data is kept</h2>
+      <p>
+        Cached email/calendar metadata and generated reports are kept locally until I delete
+        them. I review and prune the workspace periodically. Google-side data is governed by my
+        own Google account retention settings.
+      </p>
+    </section>
+
+    <section>
+      <h2>Your rights (GDPR / LOPDGDD)</h2>
+      <p>
+        Since Garbi only ever processes my own personal data, there is no other data subject
+        to notify. If you are reading this because you received an email or message that appears
+        to come from Garbi, it was sent by me, manually or as part of a workflow I triggered.
+        You can ask me at any time to:
+      </p>
+      <ul>
+        <li>stop sending you messages,</li>
+        <li>tell you what data of yours is in my systems,</li>
+        <li>delete any such data.</li>
+      </ul>
+      <p>Reach me at <a href="mailto:miquel.poch@gmail.com">miquel.poch@gmail.com</a>.</p>
+    </section>
+
+    <section>
+      <h2>Changes to this policy</h2>
+      <p>
+        If I add a new integration or change what data Garbi touches, I will update this page
+        and bump the date at the top. Material changes will also be noted in the changelog on
+        the <a href="index.html">homepage</a>.
+      </p>
+    </section>
+
+    <section>
+      <h2>Contact</h2>
+      <p>
+        Miquel Poch &middot;
+        <a href="mailto:miquel.poch@gmail.com">miquel.poch@gmail.com</a> &middot; Alicante, Spain
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p><a href="index.html">&larr; Back to Garbi homepage</a></p>
+  </footer>
+</body>
+</html>
